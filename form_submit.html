@@ -13,12 +13,33 @@
             <label for="my_txt"> Enter Something: </label>
             <input type="text" id="my_txt" name="username">
 
+            <!-- Adding Drop down -->
+            <!-- Backend will be receiving the value from option -->
+            <p>
+                Select Payment Mode:
+            <select name="pmode" multiple> 
+                <option value="ccard" selected>Credit Card</option>
+                <option value="dcard">Debit Card</option>
+                <option value="ntbnkg">Net Banking</option>
+                <option value="wlt">Wallet</option>
+            </select>
+            </p>
+
+            <p>
+            <!-- Adding CheckBoxes -->
+            <input type="checkbox" name="language" value="eng"> English
+            <input type="checkbox" name="language" value="hind" checked> Hindi
+            <input type="checkbox" name="language" value="urdu"> Urdu
+            <input type="checkbox" name="language" value="tamil"> tamil
+            </p>
+            <p>
             <!-- As all these submit buttons are in same form, hence they'd be navigating to same page where the form actio is redirecting to -->
             <!-- To avoid this situation, name attribute is used, which wil tell backend which button was clicked -->
             <input type="submit" name="action_buton" value="Edit">
             <input type="submit" name="action_buton" value="Delete">
             <input type="submit" name="action_buton" value="Update">
             <input type="submit" name="action_buton" value="Save">
+            </p>
         </form>
     </body>
     </html>
