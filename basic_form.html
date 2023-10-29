@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            HTML form practice
+        </title>
+    </head>
+    <body>
+        <h1>
+            Login Form
+        </h1>
+        <!-- action tells where the control should navigate when this particular form is submitted -->
+        <form action="form_submit_result.html">
+
+            <!-- Attaching label with respective input box -->
+            <p>
+            <label for="uname"> Enter Name: </label>
+                <input type="text" id="uname" name="username" placeholder="Enter your Name" required>
+            </p>
+            <label for "upwd"> Enter Password: </label>
+                <input type="password" id="upwd" name="userpassword" placeholder="Enter your Password" required>
+            
+            <!-- because of having name value in name attr, these 2 radio buttons are linked with each other -->
+            <!-- value will be going as POST params when form is submitted -->
+            <p>
+            <h3>Are you Married: </h3>
+            <label for="ma">Yes</label>
+                <input id="ma" type="radio" name="married" value="Married">
+            <label for="nm">No</label>
+                <input id="nm" type="radio" name="married" value="UnMarried">
+            </p>
+
+            <p>
+            <h3>Gender</h3>
+            <label for="m">Male</label>
+                <input id="m" type="radio" name="gender" value="Male">
+            <label for="f">Female</label>
+                <input id="f" type="radio" name="gender" value="Female">
+            <label for="u">Unknown</label>
+                <input id="u" type="radio" name="gender" value="Unknown">
+            </p>
+
+            <br><br><input type="submit" value="Login">
+        </form>
+    </body>
+</html>
