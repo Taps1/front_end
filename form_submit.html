@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            HTML form practice
+        </title>
+    </head>
+    <body>
+        <h1>
+            Login Form
+        </h1>
+        <form action="form_submit_001.html">
+            <label for="my_txt"> Enter Something: </label>
+            <input type="text" id="my_txt" name="username">
+
+            <!-- As all these submit buttons are in same form, hence they'd be navigating to same page where the form actio is redirecting to -->
+            <!-- To avoid this situation, name attribute is used, which wil tell backend which button was clicked -->
+            <input type="submit" name="action_buton" value="Edit">
+            <input type="submit" name="action_buton" value="Delete">
+            <input type="submit" name="action_buton" value="Update">
+            <input type="submit" name="action_buton" value="Save">
+        </form>
+    </body>
+    </html>
